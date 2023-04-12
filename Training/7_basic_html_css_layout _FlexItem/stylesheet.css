@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+}
+
+.flex-container-grow, .flex-container-shrink, 
+.flex-container-basis{
+    display: flex;
+    height: 200px;
+    background: grey;
+}
+
+ .flex-container-shrink div{
+    height: 100px;
+    width: 200px;
+  }
+
+  .flex-container-grow div{
+    height: 100px;
+  }
+
+
+.flex-container-grow .one{
+    background: pink;
+    flex-grow: 1;
+}
+
+.flex-container-grow .two{
+    background: violet;
+    flex-grow: 1;
+}
+
+.flex-container-grow .three{
+    background: red;
+    flex-grow: 3;
+}
+
+
+
+/* Flex Shrink styles */
+.flex-container-shrink .one{
+    background: yellow;
+    flex-shrink: 0;
+}
+
+.flex-container-shrink .two{
+    background: orange;
+}
+
+.flex-container-shrink .three{
+    background: blue;
+}
+
+
+/* Flex Shrink styles */
+.flex-container-basis .one{
+    background: rosybrown;
+    /* flex-basis: 200px; */
+    flex: 0 0 200px;
+    /* flex-grow flex-shrink flex-basis */
+
+}
+
+.flex-container-basis .two{
+    background: khaki;
+
+}
+
+.flex-container-basis .three{
+    background: skyblue; 
+}
+
+
+@media screen and (max-width: 500px) {
+    .flex-container-grow{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media print {
+    .flex-container-shrink{
+        background: yellow;
+    }
+}
+
+/* @media all
+@media print
+@media screen
+@media speech */
+
+
+
+
+
+

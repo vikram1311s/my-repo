@@ -1,0 +1,37 @@
+
+
+
+Windows => Node
+
+Angular/React/Vue/AnyFrontEndFrameworkorLibrary
+
+https://github.com/theintern/example-angular
+
+AngularProject
+Application Dependencies -
+1.@angular.core
+2.@angualr.animations
+
+Dev Dependencies
+
+
+
+javascript - run browser
+
+https://elliott-king.github.io/2020/08/package_json_symbols/
+
+
+Node - server (javascript) some additional node code.
+
+
+
+
+
+
+    "@testing-library/jest-dom": "~5.16.5", node 12
+    "@testing-library/react": "^13.4.0", 12
+    "@testing-library/user-event": "^13.5.0",v 12
+    "react": "^18.2.0", 16
+    "react-dom": "^18.2.0", 12
+    "react-scripts": "5.0.1", 12
+    "web-vitals": "^2.1.4" 12

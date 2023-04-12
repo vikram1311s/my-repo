@@ -1,0 +1,118 @@
+@font-face {
+    font-family: HussarBold;
+    src: url('./fonts/Hussar/HussarBoldWeb-bf92.woff');
+}
+
+@font-face {
+    font-family: Branda;
+    src: url('./fonts/Branda/Branda-yolq.ttf');
+}
+
+@font-face {
+    font-family: Audiowide;
+    src: url('./fonts/Audiowide/Audiowide-Regular.ttf');
+}
+
+
+
+
+
+body{
+    margin: 0px;
+    font-family: Audiowide;
+}
+.header{
+    color: #ffffff;
+    background: #282828;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+    font-family: Branda;
+}
+
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+}
+
+.content-block{
+    height: 200px;
+}
+
+.left-menu, .content, .right-list {
+    display: inline-block;
+}
+
+.left-menu {    
+    color: red;
+    width: 20%;
+    float: left;
+}
+
+
+/* Content Styles */
+.content{    
+    color:blue;
+    width: 60%;
+    float: left;
+}
+
+.content-head{
+    font-size: 28px;
+    color: black;
+    padding: 20px;
+    margin: 0px;
+}
+
+.content-description {
+    color: black;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    line-height: 1.4;
+}
+
+.right-list {    
+    color: white;
+    width: 20%;
+    float: right;
+    background: #9e9a9a;
+    height: 200px;
+    text-align: center;
+}
+
+.right-list ul{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.right-list ul li{
+    line-height: 2;
+}
+
+
+
+
+.list-menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;   
+}
+
+.list-menu li{
+    background: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    color: black;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+
+

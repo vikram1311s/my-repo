@@ -1,0 +1,65 @@
+@font-face {
+    font-family: HussarBold;
+    src: url('./fonts/Hussar/HussarBoldWeb-bf92.woff');
+}
+
+@font-face {
+    font-family: Branda;
+    src: url('./fonts/Branda/Branda-yolq.ttf');
+}
+
+@font-face {
+    font-family: Audiowide;
+    src: url('./fonts/Audiowide/Audiowide-Regular.ttf');
+}
+
+
+
+
+
+body{
+    margin: 0px;
+    font-family: Audiowide;
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main div{
+    /* flex: flex-grow flex-shrink flex-basis   */
+    
+    flex-grow: 1;
+    flex-basis: auto;
+
+
+}
+
+.main .one{
+    background: red;
+ 
+}
+
+.main .two{
+    background: yellow;
+    width: 200px
+
+}
+
+.main .three{
+    background: orange;
+
+}
+
+.main .four{
+    background: green;
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 900px){
+    body{
+        background: red;
+    }
+}

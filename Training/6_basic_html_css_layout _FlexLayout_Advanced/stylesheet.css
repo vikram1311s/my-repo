@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: grey;
+}
+
+.flex-container .one{
+    background: yellow;
+    order: 2;
+}
+
+.flex-container .two{
+    background: orange;
+    order: 3;
+
+}
+
+.flex-container .three{
+    background: blue;
+    order: 1;
+
+}
+
+.flex-container .four{
+    background: green;
+    order: 5;
+
+}
+.flex-container .five{
+    background: purple;
+    order: 4;
+
+}
+
+.flex-container div{
+  height: 100px
+}
+
+
+
+@media screen and (min-width: 900px) {
+    
+    .flex-container .one{
+        background: yellow;
+        order: 4;
+    }
+    
+    .flex-container .two{
+        background: orange;
+        order: 5;
+    
+    }
+    
+    .flex-container .three{
+        background: blue;
+        order: 3;    
+    }
+    
+    .flex-container .four{
+        background: green;
+        order: 1;
+    
+    }
+    .flex-container .five{
+        background: purple;
+        order: 2;
+    
+    }
+}
