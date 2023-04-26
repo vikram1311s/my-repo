@@ -1,0 +1,25 @@
+
+// clone  // its coming from github.com
+git clone https://github.com/vikram1311s/my-repo.git
+
+// untracked means file is not added
+git add filename
+or
+git add .
+
+// local but tracked (add it repo) = unique id
+git commit -m "commit message" -a
+
+
+// changes will be pushed to server
+git push
+
+
+// git pull
+
+
+
+
+
+
+// changes are not in stage means file is available but not commited to the repo
