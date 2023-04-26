@@ -1,0 +1,14 @@
+
+version control
+
+git  => github.com,gitlab, bitbucket
+svn  => ownspace
+
+
+https://xyz.github.com/myproject.git
+
+https://xyz.gitlab.com/myproject.git
+
+git commands
+
+git clone 
