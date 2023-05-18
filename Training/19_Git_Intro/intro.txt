@@ -19,7 +19,18 @@ git push
 
 
 
-
-
-
 // changes are not in stage means file is available but not commited to the repo
+
+
+// git branch = it will list all branches available and point to the currrent branch
+git branch --show-current
+
+
+// navigate to different branch
+git checkout abc
+
+// publish local branch to server
+git push --set-upstream origin abc
+
+// delete the branch
+git push origin --delete abc

@@ -1,0 +1,33 @@
+
+
+
+Hide the element in different types of  libraries and framework
+
+// Javascript
+<div id=`test`> element </div>
+doucment.getElementById('test).style.display = 'none';
+
+
+
+// Jquery
+<div id=`test`> element </div>
+$('£test').hide();
+
+
+// React
+render(){
+    { showDiv && <div  id=`test`> <div id=`test`> element </div>
+ </div>}
+}
+
+
+// Angular
+<div *ngIf=`showDiv`  id=`test`>
+ element 
+ </div>
+
+
+
+
+
+
