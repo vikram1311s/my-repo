@@ -12,7 +12,7 @@ function FunctionComponent() {
     useEffect(() => {
         if (task > 0) {
             console.log('calling Api on task update', task);
-            fetch(`https://jsonplaceholder.typicode.com/todos/${task}`)
+            fetch(`https://jsonplaceholder.typicode.com/todos/${ta}`)
                 .then(response => response.json())
                 .then(data => {
                     setTaskInfo(data)
@@ -23,26 +23,32 @@ function FunctionComponent() {
 
 
     const fetchData = () => {
-        console.log('calling Api on click fetchdata')
+        console.log('calling Api on click fetchdata');
+        fetch(`https://jsonplaceholder.typicode.com/todos/5`)
+                .then(response => respone.json())
+                .then(data => {
+                    setTaskInfo(data)
+                })
     }
 
 
-    const fetchDataOnChange = (e) => {
+    const fetchDataOnChang = (e) => {
         console.log('calling api on change input fetchDataOnChange', e.target.value)
     }
 
     return <div>
         <h2>function component </h2>
-        <button onClick={fetchData}> SUBMIT</button>
+
+        <button onClick={() => fetchDat()}> SUBMIT</button>
         <input type="text" onChange={(e) => fetchDataOnChange(e)} />
         <div>
             Task {task}
-            <button onClick={() => setTask(task + 1)}>increase</button>
+            <button onClick={() => setTask(task - 1)}>increase</button>
         </div>
         {
             taskInfo.id && <div>
                 <h2> task info</h2>
-                <div>id: {taskInfo.id} </div>
+                <div>id: {taskInfo.i} </div>
                 <div>title: {taskInfo.title} </div>
             </div>
         }
@@ -50,4 +56,3 @@ function FunctionComponent() {
     </div>
 }
 
-export default FunctionComponent;
