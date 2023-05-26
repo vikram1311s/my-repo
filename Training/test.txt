@@ -1,31 +1,15 @@
 
 
+<App Apple> Context.Provider apple
 
-Hide the element in different types of  libraries and framework
+  <Three Apple={Apple}>
 
-// Javascript
-<div id=`test`> element </div>
-doucment.getElementById('test).style.display = 'none';
+        <SubThree Apple={Apple}> </SubThree>
+        <Four Apple={Apple} > <Four> useContext
+  
+   </Three>
 
-
-
-// Jquery
-<div id=`test`> element </div>
-$('£test').hide();
-
-
-// React
-render(){
-    { showDiv && <div  id=`test`> <div id=`test`> element </div>
- </div>}
-}
-
-
-// Angular
-<div *ngIf=`showDiv`  id=`test`>
- element 
- </div>
-
+</App>
 
 
 
