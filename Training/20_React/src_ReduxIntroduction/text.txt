@@ -1,0 +1,11 @@
+
+
+Step1
+================
+npm install --save redux
+npm install --save react-redux
+
+redux
+react-redux
+
+redux also called as Global State Management Library
