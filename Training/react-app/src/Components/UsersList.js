@@ -1,9 +1,15 @@
-function UsersList({users}){
+import { useSelector } from "react-redux";
+
+
+function UsersList(){
+
+    const users = useSelector(state => state.users);
+
     return <div>
         <h2>Users List</h2>
         {
-            users.map(u => {
-                return <div> first name: <span>{u.firstName} </span>
+           users &&  users.map(u => {
+                return <div> <b>first name:</b> <span>{u.firstName} </span>  <b>type:</b>  <span>{u.type} </span>
              
                  </div>
             })

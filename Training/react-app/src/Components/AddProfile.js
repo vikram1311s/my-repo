@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-function AddUsers() {
+function AddProfile() {
+
     const dispatch = useDispatch();
 
     const [firstName, setFirstName] = useState('');
@@ -9,22 +10,21 @@ function AddUsers() {
     const handleSubmit = () => {
         const user = {
             firstName: firstName,
-            type: 'regular'
+            type: 'profile'
         }
-        // updateUser(user)
-        const createUserAction = {
+        const createProfileAction = {
             type: 'CREATE_USER',
             payload: user
         }
-        dispatch(createUserAction) 
+        dispatch(createProfileAction) 
     }
 
     return <div>
-        <h1> Add User</h1>
-        <input type="text" placeholder="enter first name" onChange={(e) => setFirstName(e.target.value)} value={firstName} name="firstName" />
-
+        <h1> Add Profile</h1>
+        <input type="text" placeholder="enter first name" 
+        onChange={(e) => setFirstName(e.target.value)} value={firstName} name="firstName" />
         <button onClick={handleSubmit}> submit </button>
     </div>
 }
 
-export default AddUsers;
+export default AddProfile;

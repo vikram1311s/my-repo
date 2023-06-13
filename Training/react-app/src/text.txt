@@ -14,14 +14,39 @@ npm install --save react-redux
 redux
 react-redux
 
+
+store
+
+
+---
+<Provider store={store}
+    x1 => dispatch => reducer => store
+    x2 => useSelector =>
+    x100
+</Provder>
+--
+
+
+
 redux also called as Global State Management Library
 
 
 
 -----------------------------
-store - users [{firstName: 'x', lastName: 'l'}]
-addUser = {firstName: 'x', lastName: 'l'}
 
-AddUser - firstName, lastName
+Store = { users: []}
 
-UsersList - display users
+Reducer = (initialState, action) => {
+
+}
+
+App------------ 
+Add User -   - dispatch( {type: 'ADD_NORMAL_USER', payload: user})
+
+
+Add Profile - user
+
+
+UsersList -users={user}{}  - connect to the store useSelector
+
+

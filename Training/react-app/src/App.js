@@ -1,22 +1,27 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import './App.css';
 import AddUsers from './Components/AddUsers';
-import UsersList from './Components/UsersList'
+import AddProfile from './Components/AddProfile';
+import UsersList from './Components/UsersList';
+import { Provider } from 'react-redux';
+import myAppStore from './Redux/store'
+
 
 function App() {
-
-  const [users, setUsers] = useState([]);
-
-  const updateUser = (user) => {
-    let existingUsers = [...users];
-    existingUsers.push(user);
-    setUsers(existingUsers)
-  }
   return (
-    <div>
-        <AddUsers updateUser={updateUser} />
-        <UsersList users={users} />
-    </div>
+    <>
+
+      {/* create store and provide in root level */}
+      <Provider store={myAppStore}>
+        {/* adduser - dispatch action */}
+        <AddUsers />
+        {/*  add user as profile */}
+        <AddProfile />
+        {/* userlist to get from store */}
+        <UsersList />
+      </Provider>
+    </>
+
   )
 }
 
