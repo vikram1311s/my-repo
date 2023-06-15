@@ -27,6 +27,18 @@ store
 --
 
 
+1. dispatch fetch_users
+2. REDUCER UPDATES STORE BASED ON ACTION TYPE 
+3. USE SELECTOR ACCESS DATA
+
+
+
+1. dispatch fetch_users
+2. saga fetch users
+3. REDUCER UPDATES STORE BASED ON ACTION TYPE 
+4. USE SELECTOR ACCESS DATA
+
+
 
 redux also called as Global State Management Library
 
@@ -50,3 +62,8 @@ Add Profile - user
 UsersList -users={user}{}  - connect to the store useSelector
 
 
+
+
+
+Links\=============
+https://stackblitz.com/edit/react-pr85an?file=src%2Fsagas%2Findex.js,src%2Fredux%2Fstore.js

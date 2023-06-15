@@ -9,13 +9,21 @@ const initialState = {
 
 
 function UserReducer(state = initialState, action) {
-    console.log('state', state)
-
     switch (action.type) {
         case 'CREATE_USER':
             return {
                 ...state,
                 users: [...state.users, action.payload]
+            }
+        case 'DELETE_USER':
+            let updateUsers = [];
+            setTimeout(() => {
+                updateUsers = state.users.filter(user => user.firstName !== action.payload)
+            }, 5000)
+            
+            return {
+                ...state,
+                users: [...updateUsers]
             }
         default:
             return state
