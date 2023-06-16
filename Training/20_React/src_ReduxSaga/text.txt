@@ -67,21 +67,3 @@ UsersList -users={user}{}  - connect to the store useSelector
 
 Links\=============
 https://stackblitz.com/edit/react-pr85an?file=src%2Fsagas%2Findex.js,src%2Fredux%2Fstore.js
-
-
-
-let x = 10;
-setTimeout(()=> {
-  console.log(0)
-}, 5000)
-
-let y = 12;
-
-
-
-
-ComponentA
-  => dispatch({type: 'GET_SERVER_DATA})
-        [===> need to fetchthedata]  - middleware (saga and thunk)
-  => reducer(state, action)
-  => show in component
