@@ -85,5 +85,3 @@ ComponentA
         [===> need to fetchthedata]  - middleware (saga and thunk)
   => reducer(state, action)
   => show in component
-
-  https://stackblitz.com/edit/dgms-react-redux-saga?file=src%2Freducers%2Fgithub.js

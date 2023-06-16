@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import './App.css';
-import AddUsers from './Components/AddUsers';
-import AddProfile from './Components/AddProfile';
-import UsersList from './Components/UsersList';
 import { Provider } from 'react-redux';
-import myAppStore from './Redux/store'
+import myAppStore from './Redux/store';
+import { useDispatch } from 'react-redux';
 
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  const getData = () => {
+    dispatch({type: 'GET_DATA'})
+  }
+
   return (
     <>
 
       {/* create store and provide in root level */}
       <Provider store={myAppStore}>
-        {/* adduser - dispatch action */}
-        <AddUsers />
-        {/*  add user as profile */}
-        <AddProfile />
-        {/* userlist to get from store */}
-        <UsersList />
+          <button onClick={getData}>get data</button>
       </Provider>
     </>
 
