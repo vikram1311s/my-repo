@@ -26,6 +26,9 @@ function Calculator() {
        } else if (operator == '-'){
         const finalOutput = parseInt(splitString[0]) - parseInt(splitString[1]) 
         setOutput(finalOutput);
+       } else if (operator == '*'){
+        const finalOutput = parseInt(splitString[0]) * parseInt(splitString[1]) 
+        setOutput(finalOutput);
        }
 
        console.log(splitString);
@@ -39,7 +42,7 @@ function Calculator() {
                 <div className="child-left">
                     <div className="operation" onClick={() => handleArthematic('C')}>C</div>
                     <div className="operation" onClick={() => handleArthematic('+')}>+</div>
-                    <div className="operation">*</div>
+                    <div className="operation" onClick={() => handleArthematic('*')}>*</div>
                     <div className="operation" onClick={() => handleArthematic('-')}>-</div>
                 </div>
 
