@@ -1,15 +1,13 @@
-import MyTable from './MyTable';
+import X from "./X";
 
 function App() {
-
-  const name = 'test';
+  const name = "test";
   return (
     <>
-      <h1> task list {name} </h1>
-       <MyTable />
+      <h1> Header </h1>
+      <X name={name} />
     </>
-
-  )
+  );
 }
 
 export default App;

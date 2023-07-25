@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+}
+
+.menu ul{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.searchbar {
+    width: 50%;
+}
