@@ -1,0 +1,89 @@
+
+
+Step1
+================
+npm install --save redux 
+{createStore}
+let store = createStore()
+
+
+npm install --save react-redux
+{Provider}
+<Provider store={store}
+
+redux
+react-redux
+
+
+store
+
+
+---
+<Provider store={store}
+    x1 => dispatch => reducer => store
+    x2 => useSelector =>
+    x100
+</Provder>
+--
+
+
+1. dispatch fetch_users
+2. REDUCER UPDATES STORE BASED ON ACTION TYPE 
+3. USE SELECTOR ACCESS DATA
+
+
+
+1. dispatch fetch_users
+2. saga fetch users
+3. REDUCER UPDATES STORE BASED ON ACTION TYPE 
+4. USE SELECTOR ACCESS DATA
+
+
+
+redux also called as Global State Management Library
+
+
+
+-----------------------------
+
+Store = { users: []}
+
+Reducer = (initialState, action) => {
+
+}
+
+App------------ 
+Add User -   - dispatch( {type: 'ADD_NORMAL_USER', payload: user})
+
+
+Add Profile - user
+
+
+UsersList -users={user}{}  - connect to the store useSelector
+
+
+
+
+
+Links\=============
+https://stackblitz.com/edit/react-pr85an?file=src%2Fsagas%2Findex.js,src%2Fredux%2Fstore.js
+
+
+
+let x = 10;
+setTimeout(()=> {
+  console.log(0)
+}, 5000)
+
+let y = 12;
+
+
+
+
+ComponentA
+  => dispatch({type: 'GET_SERVER_DATA})
+        [===> need to fetchthedata]  - middleware (saga and thunk)
+  => reducer(state, action)
+  => show in component
+
+  https://stackblitz.com/edit/dgms-react-redux-saga?file=src%2Freducers%2Fgithub.js
